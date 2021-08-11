@@ -54,6 +54,7 @@ margin: 3rem 0;
     position: relative;
     width: 100%;
     overflow-y: hidden;
+    z-index: -2;
 }
 #kid img{
     max-width: 100vw;
@@ -80,7 +81,7 @@ margin: 3rem 0;
     font-size: 1.5rem;
 }
 
-@media Screen and (max-width : 768px) {
+@media only screen and (max-width : 768px) {
     #title h1{
         font-size: 2.5rem;
     }
@@ -91,10 +92,20 @@ margin: 3rem 0;
         font-size: 0.9rem;
     }
 
+    #kid{
+        background-color: #f36a3e;
+    }
+
     #kid ul{
         padding-right: 2%;
     }
 
+    #kid li{
+        font-size: 2vw;
+    }
+    #kid img{
+        bottom: 0;
+    }
     #read-more{
         font-size: 0.5rem;
     }
