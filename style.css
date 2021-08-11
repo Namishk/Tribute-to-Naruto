@@ -11,8 +11,7 @@ body{
     font-family: 'Gloria Hallelujah', cursive;
     overflow-x: hidden;
     overflow-y: scroll;
-    height: auto;
-    max-width: 100vw;
+    position: absolute;
 }
 
 #main{
@@ -25,20 +24,22 @@ body{
 
 #title{
     text-align: center;
-    height: auto;
     margin: 3rem 0;
 }
+
 #title h1{
     font-size: 5rem;
     margin: 0 auto;
 }
+
 #title p{
     font-size: 2.5rem;
     margin: 0 auto;
 }
 #image{
     width: auto;
-    height: auto
+    height: auto;
+    max-width : 100%;
 }
 
 #img-caption{
@@ -46,7 +47,6 @@ body{
 }
 
 #tribute-info{
-min-width: 100vw;
 height: auto;
 margin: 3rem 0;
 }
@@ -72,36 +72,27 @@ margin: 3rem 0;
 }
 #kid ul{
     padding-left: 50%;
+    padding-right: 5rem;
     line-height: 2.5;
     list-style: japanese-informal;
 }
 #read-more{
-    z-index: 100;
     font-size: 1.5rem;
-    
-
 }
 
 @media only screen and (max-width : 768px) {
-
-    #main{
-        padding-left: 10rem;
+    #title h1{
+        font-size: 2.5rem;
     }
-    #image{
-      position: relative;
-      right: -10;
-  }
-  #title h1{
-      text-align: left;
-  }
-  
-    #kid img{
-      visibility: hidden    ;
-  }  
-  #kid h2{
-      margin-left: 0;
-  }
-  #kid ul{
-      padding-left: 1rem;
-  }
+    #title p{
+        font-size:1.2rem;
+    }
+    #img-caption{
+        font-size: 0.9rem;
+    }
+
+    #kid ul{
+        padding-right: 2rem;
+    }
+
 }
